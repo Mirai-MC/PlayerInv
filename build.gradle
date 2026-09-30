@@ -94,9 +94,6 @@ shadowJar {
         relocate 'linux', 'com.dependencies.lz4.linux'
         relocate 'net.jpountz', 'com.dependencies.lz4.net.jpountz'
         relocate 'win32.amd64', 'com.dependencies.lz4.win32.amd64'
-        relocate("de.tr7zw", "com.dependencies.nbtapi") {
-            include(dependency('de.tr7zw:item-nbt-api'))
-        }
         relocate("org.slf4j", "com.dependencies.slf4j") {
             include(dependency('org.slf4j:slf4j-nop'))
         }
@@ -112,6 +109,7 @@ shadowJar {
         relocate("io.github.bananapuncher714", "com.dependencies.bananapuncher714") {
             include(dependency('io.github.bananapuncher714:nbteditor'))
         }}
+    relocate 'de.tr7zw.changeme.nbtapi', 'com.playerinv.libs.nbtapi'
 }
 
 
